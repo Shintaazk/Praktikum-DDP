@@ -1,0 +1,8 @@
+Kendaraan1=["scoopy","motor","700","pink","2"]
+print(Kendaraan1)
+
+Kendaraan1 = Kendaraan1 + ["27_500_000","matic"]
+print(Kendaraan1)
+
+Kendaraan1.remove("motor")
+print(Kendaraan1)
