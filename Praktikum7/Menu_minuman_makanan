@@ -1,0 +1,49 @@
+# Daftar menu makanan dan minuman
+menu_makanan = {
+    "Nasi Goreng": 15000,
+    "Mie Goreng": 12000,
+    "Ayam Geprek": 18000
+}
+
+menu_minuman = {
+    "Aneka Jus": 15000,
+    "Soft Drink": 10000,
+    "Sweet Ice Tea": 5000
+}
+
+# Membaca input dari pengguna
+nama_pembeli = input("Masukkan Nama Pembeli: ")
+no_hp_pembeli = input("Masukkan No HP Pembeli: ")
+jenis_pesan = input("Pesan Menu Apa? (makanan atau minuman): ")
+
+# Menampilkan menu berdasarkan jenis pesanan
+if jenis_pesan == "makanan":
+    print("\nMenu Makanan:")
+    for menu, harga in menu_makanan.items():
+        print(menu, "-", "Rp.", harga)
+else:
+    print("\nMenu Minuman:")
+    for menu, harga in menu_minuman.items():
+        print(menu, "-", "Rp.", harga)
+
+menu_pesan = input("Masukkan pesanan: ")
+jumlah_pesanan = int(input("Masukkan Jumlah Pesanan: "))
+
+# Menghitung total harga
+if jenis_pesan == "makanan" and menu_pesan in menu_makanan:
+    harga_pesanan = menu_makanan[menu_pesan]
+elif jenis_pesan == "minuman" and menu_pesan in menu_minuman:
+    harga_pesanan = menu_minuman[menu_pesan]
+else:
+    print("Menu tidak valid.")
+    harga_pesanan = 0
+
+total_harga = harga_pesanan * jumlah_pesanan
+
+# Menampilkan output
+print("\nOutput:")
+print("Nama Pembeli:", nama_pembeli)
+print("No HP Pembeli:", no_hp_pembeli)
+print("Menu yang di Pesan:", menu_pesan)
+print("Jumlah Pesanan:", jumlah_pesanan)
+print("Harga yang harus dibayarkan: Rp.", total_harga)
