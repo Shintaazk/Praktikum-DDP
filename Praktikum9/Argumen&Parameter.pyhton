@@ -1,0 +1,20 @@
+#argumen 1
+
+def nama_saya(nama='ahmad'):
+    print ('nama saya adalah',nama)
+
+nama_saya ('alam')
+nama_saya ('achmad')
+nama_saya ()
+
+#argumen 2
+def hello (nama):
+  print ('hello nama saya adalah',nama)
+
+hello ('shinta')
+
+#parameter
+def perkalian_dua (x):
+  return x*2;
+
+print(perkalian_dua (4))
