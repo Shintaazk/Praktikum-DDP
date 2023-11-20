@@ -1,0 +1,23 @@
+# tugas nomer 1
+def profil (nama,alamat,gender,umur):
+  print ('nama saya adalah',nama)
+  print ('alamat saya di ',alamat)
+  print ('gender saya adalah',gender)
+  print ('umur saya adalah', umur)
+
+profil ('Shinta','Nambo','Perempuan','21')
+
+# tugas nomor 2
+def tes_nilai(nilai):
+  if nilai < 60:
+    return ('tidak lulus')
+  elif nilai >= 60 :
+    return ('lulus')
+
+print(tes_nilai(55))
+
+# tugas nomor 3
+def bilangan(angka):
+  print(angka)
+
+bilangan(700)
