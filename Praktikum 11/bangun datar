@@ -1,0 +1,24 @@
+def luas_persegi(sisi):
+    hasil = sisi*sisi
+    print('luas persegi dengan sisi',sisi,
+          'adalah',hasil)
+    
+def luas_persegi_panjang(panjang, lebar):
+    hasil = panjang*lebar
+    print('luas persegi panjang dengan panjang',panjang,'dan lebar',lebar,
+          'adalah',hasil)
+
+def luas_belah_ketupat(diagonal1,diagonal2):
+    hasil = 1/2* diagonal1*diagonal2
+    print('luas belah ketupat dengan diagonal1',diagonal1,'dan diagonal2',diagonal2,
+          'adalah',hasil) 
+
+def luas_jajar_genjang(alas,tinggi):
+    hasil = alas*tinggi
+    print('luas jajar genjang dengan alas',alas,'dan tinggi',tinggi,
+          'adalah',hasil) 
+
+def luas_segitiga(tinggi, alas):
+    hasil = 1/2 *tinggi*alas
+    print('luas segitiga dengan tinggi',tinggi,'dan alas',alas,
+          'adalah',hasil)
