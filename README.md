@@ -1,4 +1,4 @@
 # Praktikum-DDP
-# Berisi tugas 
-# untuk belajar
+Nama : Shinta Nur Allyani
+untuk bahan pelajaran 
 
